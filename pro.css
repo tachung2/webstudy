@@ -1,0 +1,24 @@
+.searcharea {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgba(3, 3, 3, 0.445);
+    margin: 300px;
+}
+
+.searcharea>form>input {
+    border: none;
+    width: 80%;
+    height: 30px;
+    background-color: rgba(3, 3, 3, 0.445);
+    padding-left: 10px;
+}
+
+.searcharea>form>span {
+    width: 20%;
+    color: #fff;
+    justify-items: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
