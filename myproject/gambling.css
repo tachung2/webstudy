@@ -1,0 +1,17 @@
+#box {
+    width: 300px;
+    background-color: #ffcc99;
+    border: 1.5px mediumslateblue solid;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.num:hover {
+    cursor: pointer;
+}
+
+#result {
+    cursor: pointer;
+    font-size: 20px;
+}

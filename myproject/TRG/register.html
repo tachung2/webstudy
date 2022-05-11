@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="register_form">
+        <h1>회원가입</h1>
+        <form action="register.php" method="post">
+            <div class="input_area">
+                <input type="text" name="nickname" id="nickname" autocomplete="off" required>
+                <label for="nickname">NAME</label>
+            </div>
+            <div class="input_area">
+                <input type="text" name="id" id="id" autocomplete="off" required>
+                <label for="id">USER ID</label>
+            </div>
+            <div class="input_area">
+                <input type="password" name="pw" autocomplete="off" required>
+                <label for="pw">PASSWORD</label>
+            </div>
+            <div class="input_area">
+                <input type="email" name="email" id="email" autocomplete="off" required>
+                <label for="email">EMAIL</label>
+            </div>
+            <div class="btn_area">
+                <button id="btn" type="submit">회웝가입</button>
+            </div>
+        </form>
+    </section>
+
+    <script>
+        let nickname = $('#nickname');
+        let id = $('#id');
+        let pw = $('#pw');
+        let email = $('#email');
+        let btn = $('#btn');
+
+        $(btn).on('click', function() {
+            if ($(nickname).val() == "") {
+                $(nickname).next('label').addClass('warning');
+                setTimeout(function() {
+                    $('label').removeClass('warning');
+                }, 1500);
+            } else if ($(id).val() == "") {
+                $(id).next('label').addClass('warning');
+                setTimeout(function() {
+                    $('label').removeClass('warning');
+                }, 1500);
+            } else if ($(pw).val() == "") {
+                $(pw).next('label').addClass('warning');
+                setTimeout(function() {
+                    $('label').removeClass('warning');
+                }, 1500);
+            } else if ($(email).val() == "") {
+                $(email).next('label').addClass('warning');
+                setTimeout(function() {
+                    $('label').removeClass('warning');
+                }, 1500);
+            }
+        })
+    </script>
+</body>
+
+</html>
